@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>插入排序</title>
+</head>
+  <script>
+    var arr = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6];
+    for (var i = 1; i < arr.length; i++) {//从第二个开始
+      var temp = arr[i];
+      for (var j = i - 1; j >= 0 && arr[j] > temp; j--) {//从第i个数开始往前比较，只要这第i个数小于比较的数就一直往前，使i到合适的位置
+        arr[j + 1] = arr[j];
+      }
+      arr[j + 1] = temp;
+    }
+    console.log(arr);
+  </script>
+
+<body>
+
+</body>
+
+</html>
