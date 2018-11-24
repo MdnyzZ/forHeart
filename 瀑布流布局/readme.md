@@ -110,21 +110,6 @@ var hArr = [];
 ```
 
 ```js
-
-```
-
-```js
-//找到最小高度的值对应的索引
-function getMinIndex(arr, val) {
-  for (var key in arr) {
-    if (arr[key] === val) {
-      return key;
-    }
-  }
-}
-```
-
-```js
 //然后我们存储完成之后就要开始设置对应的下个盒子显示的位置了
 //紧跟着上面的代码写上
 else {
@@ -148,6 +133,18 @@ else {
     }
   }
 ```
+
+```js
+//找到最小高度的值对应的索引
+function getMinIndex(arr, val) {
+  for (var key in arr) {
+    if (arr[key] === val) {
+      return key;
+    }
+  }
+}
+```
+
 
 这样我们就写完了基本的页面摆放
 
